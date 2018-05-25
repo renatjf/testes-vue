@@ -18,6 +18,7 @@
       <br>
       <input type="text" placeholder="teste" v-model="usuario.nome">
       <p>Nome: {{usuario.nome}}</p>
+      <p v-once>v-once "nao muda o atributo": {{usuario.nome}}</p>
     </div>
 
 
@@ -37,7 +38,7 @@
             {titulo:'registro5'}
           ],
           clicou: false,
-          usuario: {nome:""}
+          usuario: {nome:"Renato"}
         },
         methods: {
           usuarioClicou:function() {
