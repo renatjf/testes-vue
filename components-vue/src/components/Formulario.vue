@@ -60,6 +60,10 @@
       Recusrso Lazy {{busca}}
       <br>
       <input type="text" v-model.lazy="busca">
+    </p>
+    <p>
+      Number: {{idade}} - {{typeof idade}}
+      <input type="number" name="" id="" v-model.number="idade">
 
     </p>
     <br><br>
@@ -82,7 +86,8 @@ export default {
       sexo: null, //ou 'M' ou 'F'
       ano: null,
       cores: [],
-      busca: ''
+      busca: '',
+      idade: 45
     };
   }
 };
