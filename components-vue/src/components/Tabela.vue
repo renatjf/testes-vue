@@ -2,12 +2,12 @@
   <table>
    <thead>
      <tr>
-       <th v-for="titulo in titulos" :key="titulo">{{ titulo }}</th>       
+       <th v-for="(titulo, index) in titulos" :key="index">{{ titulo }}</th>       
      </tr>
    </thead>
    <tbody>
-     <tr v-for="registro in registros" :key="registro">
-       <td  v-for="item in registro" :key="item">{{ item }}</td>       
+     <tr v-for="(registro, index) in registros" :key="index">
+       <td v-for="(item, index) in registro" :key="index">{{ item }}</td>       
      </tr>
    </tbody>
   </table>
@@ -24,7 +24,9 @@ export default {
     return {
       msg: 'Tabela component',      
       registros: [
-        {titulo: 'Renato', descricao: 'renatjf@gmail.com', link: 'Link'}
+        {titulo: 'Renato', descricao: 'renatjf@gmail.com', link: 'Link'},
+        {titulo: 'Luiz', descricao: 'renatjf@gmail.com', link: 'Link'},
+        {titulo: 'Paula', descricao: 'renatjf@gmail.com', link: 'Link'}
       ]
     }
   }

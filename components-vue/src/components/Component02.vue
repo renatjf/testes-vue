@@ -1,7 +1,7 @@
 <template>
   <div class="teste">
     <h1>{{ msg }} - {{ testeProps }}</h1>
-    <div v-for="registro in registros" :key="registro">{{registro.titulo}}</div>
+    <div v-for="(registro, index) in registros" :key="index">{{registro.titulo}}</div>
   </div>
 </template>
 

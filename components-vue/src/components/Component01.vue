@@ -1,7 +1,7 @@
 <template>
   <div class="teste">
     <h1>{{ msg }}</h1>
-    <div v-bind="tituloComponent01">{{ tituloComponent01 }}</div>
+    <div>{{ tituloComponent01 }}</div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   data () {
     return {
       msg: 'Component 01 Normal',
-      tituloComponent01: 'Titulo component 01 v-bind'
+      tituloComponent01: 'Titulo component 01 Normal'
     }
   }
 }

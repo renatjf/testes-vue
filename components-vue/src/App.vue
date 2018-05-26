@@ -2,7 +2,7 @@
   <div id="app">    
     <app-component01></app-component01>
     <app-component02 testeProps="Texto da props"></app-component02>
-    <app-tabela v-bind:titulos="['Nome', 'E-mail', 'Link']" v-bind:registros="registros"></app-tabela>
+    <app-tabela v-bind:titulos="['Nome', 'E-mail', 'Link']" registros="registros"></app-tabela>
     <app-moeda></app-moeda>
   </div>
 </template>
