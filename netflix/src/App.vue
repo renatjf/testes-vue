@@ -1,32 +1,36 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>      
+    <div class="contain">
+      <app-video titulo="Videos"></app-video>
+      <app-video titulo="Comedia"></app-video>
+    </div>
   </div>
 </template>
 
 <script>
+//import component
+import Video from "./components/Video";
+
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+
+  //declara components
+  components: {
+    "app-video": Video
+  },
+  data() {
     return {
-      msg: 'Teste Netflix'
-    }
+      msg: "Teste Netflix"
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
-#app {  
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;    
-  }
 }
-
 
 </style>
