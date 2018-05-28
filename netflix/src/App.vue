@@ -9,14 +9,14 @@
 
 <script>
 //import component
-import Video from "./components/Video";
+import Terror from "./components/Terror";
 
 export default {
   name: "app",
 
   //declara components
   components: {
-    "app-video": Video
+    "app-video": Terror
   },
   data() {
     return {

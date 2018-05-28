@@ -8,97 +8,19 @@
 
       <div ref="scroller" class="row">
         <div class="row__inner">
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-          <div class="gui-card">
-            <div class="gui-card__media">
-              <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
-            </div>
-            <div class="gui-card__details">
-              <div class="gui-card__title">
-                Assassin’s Creed
-              </div>
-            </div>
-          </div>
-
+          
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
+          
         </div>
       </div>
 
@@ -111,9 +33,15 @@
 </template>
 
 <script>
+
+import Filmes from "./Filmes";
+
 export default {
   name: "Video",
   props: ["titulo"],
+  components: {
+    "app-filmes": Filmes
+  },
   data() {
     return {
       intervalo:null
@@ -200,6 +128,7 @@ a:hover {
   position: absolute;
   top: 22px;
   z-index: 30;
+  color: white;
 }
 
 .slider .handle.handlePrev {
@@ -327,6 +256,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   padding: 10px;
+  
 }
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
