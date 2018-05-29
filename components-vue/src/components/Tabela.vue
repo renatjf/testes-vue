@@ -7,7 +7,9 @@
    </thead>
    <tbody>
      <tr v-for="(registro, index) in registros" :key="index">
-       <td v-for="(item, index) in registro" :key="index">{{ item }}</td>       
+       <td>{{ registro.titulo }}</td>
+       <td>{{ registro.descricao }}</td>
+       <td v-html="registro.link">{{ registro.link }}</td>
      </tr>
    </tbody>
   </table>
@@ -16,20 +18,23 @@
 <script>
 export default {
   name: 'Tabela',
+  
   props: [
-    'titulos'    
+    'titulos'
     ],
   
   data () {
     return {
       msg: 'Tabela component',      
       registros: [
-        {titulo: 'Renato', descricao: 'renatjf@gmail.com', link: 'Link'},
-        {titulo: 'Luiz', descricao: 'renatjf@gmail.com', link: 'Link'},
-        {titulo: 'Paula', descricao: 'renatjf@gmail.com', link: 'Link'}
+        {titulo: 'Renato', descricao: 'renatjf@gmail.com', link: '<a href="http://www.google.com">Link</a>'},
+        {titulo: 'Luiz', descricao: 'renatjf@gmail.com', link: '<a href="http://www.google.com">Link</a>'},
+        {titulo: 'Paula', descricao: 'renatjf@gmail.com', link: '<a href="http://www.google.com">Link</a>'},
+        {titulo: 'Paula', descricao: 'renatjf@gmail.com', link: '<a href="http://www.google.com">Link</a>'},
       ]
     }
   }
+  
 }
 </script>
 
