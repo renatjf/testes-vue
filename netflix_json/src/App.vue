@@ -2,7 +2,7 @@
   <div id="app">
     <div class="contain">
       <app-terror></app-terror>
-      <app-terror></app-terror>
+      
     </div>
   </div>
 </template>

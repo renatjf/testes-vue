@@ -9,8 +9,9 @@
       <div ref="scroller" class="row">
         <div class="row__inner">          
           <!-- for lista de filmes -->
-          <div class="gui-card" v-for="listaFilme in listaFilmes.filmes" v-bind:key="listaFilme.id">
+          <div class="gui-card" v-for="listaFilme in listaFilmes" v-bind:key="listaFilme.id">
             <div class="gui-card__media">
+              
               <img class="gui-card__img" v-bind:src="listaFilme.imagem" v-bind:alt="listaFilme.titulo"/>
             </div>
             <div class="gui-card__details">
@@ -41,63 +42,18 @@ export default {
     return {
       genero: "Terror",
       intervalo:null,
-      listaFilmes: {
-        dados: [
-          {
-            "id": 1,
-            "genero": "Terror"
-          }
-        ],
-        filmes: [
-          {
-            "id":1,
-            "titulo":"It a Coisa",
-            "imagem":"http://www.hcnoar.com/image.axd?picture=2017%2f9%2f863789.jpg" 
-          },
-          {
-            "id":2,
-            "titulo":"O Exorcista",
-            "imagem":"http://www.poscreditos.com.br/wp-content/uploads/2015/10/dfvsdf.jpg" 
-          },
-          {
-            "id":3,
-            "titulo":"It a Coisa",
-            "imagem":"http://www.hcnoar.com/image.axd?picture=2017%2f9%2f863789.jpg" 
-          },
-          {
-            "id":2,
-            "titulo":"O Exorcista",
-            "imagem":"http://www.poscreditos.com.br/wp-content/uploads/2015/10/dfvsdf.jpg" 
-          },
-          {
-            "id":2,
-            "titulo":"O Exorcista",
-            "imagem":"http://www.poscreditos.com.br/wp-content/uploads/2015/10/dfvsdf.jpg" 
-          },
-          {
-            "id":2,
-             "titulo":"It a Coisa",
-            "imagem":"http://www.hcnoar.com/image.axd?picture=2017%2f9%2f863789.jpg"  
-          },
-          {
-            "id":2,
-            "titulo":"O Exorcista",
-            "imagem":"http://www.poscreditos.com.br/wp-content/uploads/2015/10/dfvsdf.jpg" 
-          },
-          {
-            "id":2,
-             "titulo":"It a Coisa",
-            "imagem":"http://www.hcnoar.com/image.axd?picture=2017%2f9%2f863789.jpg" 
-          },
-          {
-            "id":2,
-            "titulo":"O Exorcista",
-            "imagem":"http://www.poscreditos.com.br/wp-content/uploads/2015/10/dfvsdf.jpg" 
-          },
-        ]
-      }      
+      
+        listaFilmes: []
+      
     };
   },
+  created(){
+    this.$http.get('http://localhost:3000/listaFilmes').then(res => {
+      this.listaFilmes = res.body;
+      console.log(res);          
+    });
+  },
+  
    methods:{
     scrollDireita(){
       this.intervalo = setInterval( () => { this.$refs.scroller.scrollLeft += 1 }  , 5);

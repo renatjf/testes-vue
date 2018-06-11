@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "genero": "Terror",
+    "filmes": [
+      {
+        "id": 1,
+        "titulo": "It a Coisa",
+        "imagem": "http://www.hcnoar.com/image.axd?picture=2017%2f9%2f863789.jpg"
+      }
+    ]
+  }
+]
