@@ -1,15 +1,17 @@
 <template>
   <div>
     <TesteStyled>
-    <h1>
-     Página {{ msg }}
-    </h1>
+      <h1>
+       Página {{ msg }}
+      </h1>
     </TesteStyled>
+
+    <router-link to="/contato">Pagina de contato</router-link>
   </div>
 </template>
 
 <script>
-import TesteStyled from '../styled-components/styled'
+import TesteStyled from "../styled-components/styled";
 
 export default {
   name: "Home",
