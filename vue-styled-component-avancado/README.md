@@ -1,4 +1,6 @@
-# paginacao modelo 01
+# styled-component-avancado
+
+> A Vue.js project
 
 ## Build Setup
 

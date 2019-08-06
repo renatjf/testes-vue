@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <app-paginacao></app-paginacao>
+    <app-home></app-home>
   </div>
 </template>
 
 <script>
-//import component
-import Paginacao from "./components/Paginacao";
+//import components
+import Home from "./components/Home";
 
 export default {
   name: "app",
-
-  //declara components
   components: {
-    "app-paginacao": Paginacao
+    //components
+    "app-home": Home
   },
   data() {
-    return {
-      msg: "Páginação 01"
-    };
+    return {};
   }
 };
 </script>
