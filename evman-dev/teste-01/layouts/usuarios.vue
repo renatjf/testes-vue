@@ -1,13 +1,11 @@
 <template>
   <div>
     <header>
-      Seção de usuários
+      Layout de usuarios
     </header>
     <nuxt />
   </div>
 </template>
-
-
 
 <style>
 

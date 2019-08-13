@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <h1>Header</h1>
     <ul class="nav-item">
       <li>
         <nuxt-link to="/">Home</nuxt-link>
@@ -12,6 +13,9 @@
 </template>
 
 <style scoped>
+h1 {
+  flex-wrap: wrap;
+}
 .header {
   widows: 100%;
   height: 60px;
