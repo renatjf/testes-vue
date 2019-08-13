@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Header />
 	<h2>teste de pagina usuarios</h2>
   <br>
   <hr>
@@ -11,11 +12,15 @@
 </template>
 
 <script>
+import Header from '~/components/Header.vue';
 export default {
   data () {
     return {
       usuarioId:''
     }
+  },
+  components: {
+    Header
   },
   methods: {
     carregaUsuario() {

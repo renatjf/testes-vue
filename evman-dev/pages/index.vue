@@ -1,7 +1,8 @@
 <template>
   <div class="container">
+
     <div>
-      <logo />
+      <Header />
       <h1 class="title">
         evman-dev
       </h1>
@@ -17,11 +18,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Header from '~/components/Header.vue';
 
 export default {
   components: {
-    Logo
+    Header
   }
 }
 </script>
