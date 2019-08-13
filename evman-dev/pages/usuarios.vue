@@ -21,6 +21,7 @@ export default {
     carregaUsuario() {
       this.$router.push('/usuarios/' + this.usuarioId)
     }
-  }
+  },
+  layout: 'usuarios'
 }
 </script>
