@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="check-ok" transform="translate(-31 -172)">
+    <g id="bola" transform="translate(31 172)" fill="#53be61" stroke="#53be61" stroke-width="1">
+      <rect width="30" height="30" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="none"/>
+    </g>
+    <path id="check" d="M16.481,5.293,7.72,14.054l-3.33-3.33-1.1,1.1L7.72,16.248,17.578,6.39Z" transform="translate(35.707 176.707)" fill="#fff"/>
+  </g>
+</svg>
