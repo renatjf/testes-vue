@@ -1,6 +1,6 @@
 {
-  "name": "testes-vue",
-  "short_name": "testes-vue",
+  "name": "vue-cssgrid",
+  "short_name": "vue-cssgrid",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

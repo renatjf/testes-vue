@@ -1,4 +1,4 @@
-# testes-vue
+# teste-lib
 
 ## Project setup
 ```

@@ -1,26 +1,26 @@
 <template>
 
 <div class="slider">
-      <h3>{{titulo}}</h3>      
+      <h3>{{titulo}}</h3>
       <span v-on:mouseover="scrollEsquerda()" v-on:mouseout="clearScroll()" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
 
       <div ref="scroller" class="row">
         <div class="row__inner">
-          
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>  
-          
+
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="https://i0.wp.com/noset.com.br/wp-content/uploads/2018/01/God-of-War-2018-Lan%C3%A7amento.jpg?w=1920"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+          <app-filmes tituloFilme="Teste" imagem="http://www.ultimaficha.com.br/wp-content/uploads/2017/10/God-of-War-5.jpg"></app-filmes>
+
         </div>
       </div>
 
@@ -29,7 +29,7 @@
       </span>
 
     </div>
-  
+
 </template>
 
 <script>
@@ -73,9 +73,9 @@ html {
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
-  
+
   display: -ms-flexbox;
-  
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -256,7 +256,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   padding: 10px;
-  
+
 }
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
